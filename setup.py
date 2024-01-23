@@ -19,6 +19,6 @@ setup(
     author='mohammed',
     author_email='mohammed@calicoai.com',
     packages=find_packages(),
-    install_requires=['pandas','numpy','seaborn'],
+    install_requires=get_requirements("requirements.txt"),
 )
 
