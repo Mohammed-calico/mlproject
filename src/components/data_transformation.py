@@ -32,7 +32,8 @@ class DataTransformation:
 
             num_pipeline=Pipeline(
                 steps=[
-                    ("imputer",SimpleImputer(strategy="median"))
+                    ("imputer",SimpleImputer(strategy="median")),
+                    ("scaler",StandardScaler())
                 ]
             )
             logging.info("numerical columns standard scaling completed")
